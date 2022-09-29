@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 650px;
+    margin: 5rem auto;
+    gap: 35px;
+}
+
+div {
+    border-radius: 1rem;
+    align-self: center;
+    justify-self: center;
+    border: 3px solid rgb(63, 58, 58);
+    box-shadow: 0 4px 6px rgb(63, 58, 58);
+}
+
+.insignia {
+    background-color: rgb(27, 21, 21);
+    height: 100px;
+    width: 100px;
+}
+
+.insignia:hover {
+    border-color: #0066ff;
+    cursor: pointer;
+    box-shadow: 0 8px 10px black;
+}
+
+.choco {
+    background-image: url(https://www.encancha.mx/u/fotografias/m/2021/7/7/f850x638-14649_92138_5050.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.matrix {
+    background-image: url(https://dailytimes.com.pk/assets/uploads/2020/05/29/red-pill-blue-pill-hands.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.paranormal {
+    background-image: url(https://as01.epimg.net/meristation/imagenes/2021/04/07/noticias/1617794460_381503_1617794504_noticia_normal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.firebreak {
+    background-image: url(https://w0.peakpx.com/wallpaper/533/707/HD-wallpaper-firebreak-panda-call-of-duty-mobile-codm-codmobile-firebreak-fondos-codm-codm-codmobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.coraje {
+    background-image: url(https://indiehoy.com/wp-content/uploads/2018/10/Coraje-el-perro-cobarde-1200x900.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.delfin {
+    background-image: url(https://t2.ea.ltmcdn.com/es/posts/8/1/5/el_delfin_es_un_mamifero_o_un_pez_24518_600_square.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dj {
+    background-image: url(https://selectormusicalcom.files.wordpress.com/2020/09/cdj-3000_three-quarters.jpg?w=1200);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fernando {
+    background-image: url(https://i1.sndcdn.com/avatars-0Y4ZvV1EZppDeWsG-b2uaEg-t500x500.jpg);
+    background-size: cover;
+    grid-row: span 2;
+    grid-column: span 3;
+    justify-self: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 700px) {
+    .contenedor {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 500px;
+    }
+    .fernando {
+        grid-row: 2 / span 2;
+        grid-column: 2/span 2;
+        width: 250px;
+        height: 250px
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        max-width: 400px;
+    }
+    .fernando {
+        grid-row: 2 / span 2;
+        grid-column: 2/span 2;
+        width: 200px;
+        height: 200px;
+        border-radius: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .fernando {
+        grid-row: 2;
+        grid-column: 2/span 1;
+        width: 100px;
+        height: 100px;
+        border-radius: 1.5rem;
+    }
+}
